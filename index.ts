@@ -18,14 +18,14 @@ if(list_ans.list === "withdraw"){
 ]);
 if (amount.amount <= my_Balance && amount.amount >= 500) {
 my_Balance -=  amount.amount;
-console.log("Your remaining balance is: " + my_Balance);     
+console.log("Your remaining balance is: ", my_Balance);     
 }
 else {
     console.log("insufficient balance");
 }
 }
-else if(list_ans === "check balance"){
-    console.log("Your balance is: " + my_Balance);
+else if(list_ans.list === "check balance"){
+    console.log("Your balance is: ", my_Balance);
 }
 }
 else {
